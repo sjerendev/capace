@@ -1,0 +1,38 @@
+/*
+Theme Name: custom_capace
+Author: Patrik Sjeren
+Author URI: https://sjeren.se
+Description: Enkelt bootstrap tema för Capace
+*/
+
+#ttr_sidebar {
+	border-left: 1px solid black;
+}
+
+#ttr_footer {
+	width: 100%;
+	border-top: 1px #a2a2a2 solid;
+	text-align: center;
+}
+
+/* styles.css */
+body {
+	background-color: #ffffff;
+	/* Default background color */
+}
+
+.color1 {
+	background-color: #ff5733;
+}
+
+.color2 {
+	background-color: #33ff57;
+}
+
+.color3 {
+	background-color: #5733ff;
+}
+
+.color4 {
+	background-color: #3388ff;
+}
