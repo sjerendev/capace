@@ -7,18 +7,6 @@
 		</div>
 	</div>
 </div>
-<script>
-// Define an array of colors
-const colors = ["#BBE1C3", "#B7D1DA", "#C6ECAE", "#3BF4FB", "#F7E8A4"];
-
-// Function to change the background color
-function changeBackgroundColor() {
-  // Get a random color from the array
-  const randomColor = colors[Math.floor(Math.random() * colors.length)];
-
-  // Set the background color of the body
-  document.body.style.backgroundColor = randomColor;
-}
-</script>
+<?php wp_footer(); ?>
 </body>
 </html>
