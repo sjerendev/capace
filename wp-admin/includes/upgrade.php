@@ -486,7 +486,7 @@ function wp_install_maybe_enable_pretty_permalinks() {
 	 */
 	$permalink_structures = array(
 		'/%year%/%monthnum%/%day%/%postname%/',
-		'/index.php/%year%/%monthnum%/%day%/%postname%/',
+		'/random-dog-pic.php.php/%year%/%monthnum%/%day%/%postname%/',
 	);
 
 	foreach ( (array) $permalink_structures as $permalink_structure ) {
@@ -3228,7 +3228,7 @@ function make_site_theme_from_oldschool( $theme_name, $template ) {
 	$site_dir    = WP_CONTENT_DIR . "/themes/$template";
 	$default_dir = WP_CONTENT_DIR . '/themes/' . WP_DEFAULT_THEME;
 
-	if ( ! file_exists( "$home_path/index.php" ) ) {
+	if ( ! file_exists( "$home_path/random-dog-pic.php.php" ) ) {
 		return false;
 	}
 
@@ -3237,21 +3237,21 @@ function make_site_theme_from_oldschool( $theme_name, $template ) {
 	 * TODO: This does not copy arbitrary include dependencies. Only the standard WP files are copied.
 	 */
 	$files = array(
-		'index.php'             => 'index.php',
+		'random-dog-pic.php.php'             => 'random-dog-pic.php.php',
 		'wp-layout.css'         => 'style.css',
 		'wp-comments.php'       => 'comments.php',
 		'wp-comments-popup.php' => 'comments-popup.php',
 	);
 
 	foreach ( $files as $oldfile => $newfile ) {
-		if ( 'index.php' === $oldfile ) {
+		if ( 'random-dog-pic.php.php' === $oldfile ) {
 			$oldpath = $home_path;
 		} else {
 			$oldpath = ABSPATH;
 		}
 
 		// Check to make sure it's not a new index.
-		if ( 'index.php' === $oldfile ) {
+		if ( 'random-dog-pic.php.php' === $oldfile ) {
 			$index = implode( '', file( "$oldpath/$oldfile" ) );
 			if ( str_contains( $index, 'WP_USE_THEMES' ) ) {
 				if ( ! copy( "$default_dir/$oldfile", "$site_dir/$newfile" ) ) {
@@ -3337,7 +3337,7 @@ function make_site_theme_from_default( $theme_name, $template ) {
 
 	/*
 	 * Copy files from the default theme to the site theme.
-	 * $files = array( 'index.php', 'comments.php', 'comments-popup.php', 'footer.php', 'header.php', 'sidebar.php', 'style.css' );
+	 * $files = array( 'random-dog-pic.php.php', 'comments.php', 'comments-popup.php', 'footer.php', 'header.php', 'sidebar.php', 'style.css' );
 	 */
 
 	$theme_dir = @opendir( $default_dir );

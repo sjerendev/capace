@@ -31,7 +31,7 @@ if ( wp_is_mobile() ) {
 
 // Used in the HTML title tag.
 $title       = __( 'Dashboard' );
-$parent_file = 'index.php';
+$parent_file = 'random-dog-pic.php.php';
 
 $help  = '<p>' . __( 'Welcome to your WordPress Dashboard!' ) . '</p>';
 $help .= '<p>' . __( 'The Dashboard is the first place you will come to every time you log into your site. It is where you will find all your WordPress tools. If you need help, just click the &#8220;Help&#8221; tab above the screen title.' ) . '</p>';

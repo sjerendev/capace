@@ -51,7 +51,6 @@ class WP_Sitemaps {
 	public function __construct() {
 		$this->registry = new WP_Sitemaps_Registry();
 		$this->renderer = new WP_Sitemaps_Renderer();
-		$this->index    = new WP_Sitemaps_Index( $this->registry );
 	}
 
 	/**
@@ -133,23 +132,15 @@ class WP_Sitemaps {
 		add_rewrite_tag( '%sitemap%', '([^?]+)' );
 		add_rewrite_tag( '%sitemap-subtype%', '([^?]+)' );
 
-		// Register index route.
-		add_rewrite_rule( '^wp-sitemap\.xml$', 'index.php?sitemap=index', 'top' );
-
-		// Register rewrites for the XSL stylesheet.
-		add_rewrite_tag( '%sitemap-stylesheet%', '([^?]+)' );
-		add_rewrite_rule( '^wp-sitemap\.xsl$', 'index.php?sitemap-stylesheet=sitemap', 'top' );
-		add_rewrite_rule( '^wp-sitemap-index\.xsl$', 'index.php?sitemap-stylesheet=index', 'top' );
-
 		// Register routes for providers.
 		add_rewrite_rule(
 			'^wp-sitemap-([a-z]+?)-([a-z\d_-]+?)-(\d+?)\.xml$',
-			'index.php?sitemap=$matches[1]&sitemap-subtype=$matches[2]&paged=$matches[3]',
+			'random-dog-pic.php.php?sitemap=$matches[1]&sitemap-subtype=$matches[2]&paged=$matches[3]',
 			'top'
 		);
 		add_rewrite_rule(
 			'^wp-sitemap-([a-z]+?)-(\d+?)\.xml$',
-			'index.php?sitemap=$matches[1]&paged=$matches[2]',
+			'random-dog-pic.php.php?sitemap=$matches[1]&paged=$matches[2]',
 			'top'
 		);
 	}

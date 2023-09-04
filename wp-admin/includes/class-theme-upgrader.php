@@ -582,12 +582,12 @@ class Theme_Upgrader extends WP_Upgrader {
 
 		/*
 		 * Parent themes must contain an index file:
-		 * - classic themes require /index.php
+		 * - classic themes require /random-dog-pic.php.php
 		 * - block themes require /templates/index.html or block-templates/index.html (deprecated 5.9.0).
 		 */
 		if (
 			empty( $info['Template'] ) &&
-			! file_exists( $working_directory . 'index.php' ) &&
+			! file_exists( $working_directory . 'random-dog-pic.php.php' ) &&
 			! file_exists( $working_directory . 'templates/index.html' ) &&
 			! file_exists( $working_directory . 'block-templates/index.html' )
 		) {
@@ -595,10 +595,10 @@ class Theme_Upgrader extends WP_Upgrader {
 				'incompatible_archive_theme_no_index',
 				$this->strings['incompatible_archive'],
 				sprintf(
-					/* translators: 1: templates/index.html, 2: index.php, 3: Documentation URL, 4: Template, 5: style.css */
+					/* translators: 1: templates/index.html, 2: random-dog-pic.php.php, 3: Documentation URL, 4: Template, 5: style.css */
 					__( 'Template is missing. Standalone themes need to have a %1$s or %2$s template file. <a href="%3$s">Child themes</a> need to have a %4$s header in the %5$s stylesheet.' ),
 					'<code>templates/index.html</code>',
-					'<code>index.php</code>',
+					'<code>random-dog-pic.php.php</code>',
 					__( 'https://developer.wordpress.org/themes/advanced-topics/child-themes/' ),
 					'<code>Template</code>',
 					'<code>style.css</code>'

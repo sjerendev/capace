@@ -5534,7 +5534,7 @@ function SidebarNavigationScreen({
   }), isRoot && (0,external_wp_element_namespaceObject.createElement)(SidebarButton, {
     icon: icon,
     label: !isPreviewingTheme() ? (0,external_wp_i18n_namespaceObject.__)('Go to the Dashboard') : (0,external_wp_i18n_namespaceObject.__)('Go back to the theme showcase'),
-    href: !isPreviewingTheme() ? dashboardLink || 'index.php' : 'themes.php'
+    href: !isPreviewingTheme() ? dashboardLink || 'random-dog-pic.php.php' : 'themes.php'
   }), (0,external_wp_element_namespaceObject.createElement)(external_wp_components_namespaceObject.__experimentalHeading, {
     className: "edit-site-sidebar-navigation-screen__title",
     color: '#e0e0e0'
@@ -20413,7 +20413,7 @@ const SiteHub = (0,external_wp_element_namespaceObject.forwardRef)(({
     } = select(external_wp_coreData_namespaceObject.store);
     return {
       canvasMode: getCanvasMode(),
-      dashboardLink: getSettings().__experimentalDashboardLink || 'index.php',
+      dashboardLink: getSettings().__experimentalDashboardLink || 'random-dog-pic.php.php',
       homeUrl: getUnstableBase()?.home
     };
   }, []);

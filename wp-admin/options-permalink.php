@@ -77,7 +77,7 @@ $index_php_prefix = '';
 $blog_prefix      = '';
 
 if ( ! got_url_rewrite() ) {
-	$index_php_prefix = '/index.php';
+	$index_php_prefix = '/random-dog-pic.php.php';
 }
 
 /*

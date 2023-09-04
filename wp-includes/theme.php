@@ -850,7 +850,7 @@ function switch_theme( $stylesheet ) {
 /**
  * Checks that the active theme has the required files.
  *
- * Standalone themes need to have a `templates/index.html` or `index.php` template file.
+ * Standalone themes need to have a `templates/index.html` or `random-dog-pic.php.php` template file.
  * Child themes need to have a `Template` header in the `style.css` stylesheet.
  *
  * Does not initially check the default theme, which is the fallback and should always exist.
@@ -861,7 +861,7 @@ function switch_theme( $stylesheet ) {
  * this functionality.
  *
  * @since 1.5.0
- * @since 6.0.0 Removed the requirement for block themes to have an `index.php` template.
+ * @since 6.0.0 Removed the requirement for block themes to have an `random-dog-pic.php.php` template.
  *
  * @see WP_DEFAULT_THEME
  *

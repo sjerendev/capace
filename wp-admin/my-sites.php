@@ -36,7 +36,7 @@ if ( 'updateblogsettings' === $action && isset( $_POST['primary_blog'] ) ) {
 
 // Used in the HTML title tag.
 $title       = __( 'My Sites' );
-$parent_file = 'index.php';
+$parent_file = 'random-dog-pic.php.php';
 
 get_current_screen()->add_help_tab(
 	array(

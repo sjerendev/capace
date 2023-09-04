@@ -514,7 +514,7 @@ function redirect_canonical( $requested_url = null, $do_redirect = true ) {
 				$redirect['query'] = remove_query_arg( 'cpage', $redirect['query'] );
 			}
 
-			// Strip off trailing /index.php/.
+			// Strip off trailing /random-dog-pic.php.php/.
 			$redirect['path'] = preg_replace( '|/' . preg_quote( $wp_rewrite->index, '|' ) . '/?$|', '/', $redirect['path'] );
 			$redirect['path'] = user_trailingslashit( $redirect['path'] );
 
@@ -590,7 +590,7 @@ function redirect_canonical( $requested_url = null, $do_redirect = true ) {
 		unset( $redirect['port'] );
 	}
 
-	// Trailing /index.php.
+	// Trailing /random-dog-pic.php.php.
 	$redirect['path'] = preg_replace( '|/' . preg_quote( $wp_rewrite->index, '|' ) . '/*?$|', '/', $redirect['path'] );
 
 	$punctuation_pattern = implode(
@@ -643,7 +643,7 @@ function redirect_canonical( $requested_url = null, $do_redirect = true ) {
 		$redirect['query'] = preg_replace( '#^\??&*?#', '', $redirect['query'] );
 	}
 
-	// Strip /index.php/ when we're not using PATHINFO permalinks.
+	// Strip /random-dog-pic.php.php/ when we're not using PATHINFO permalinks.
 	if ( ! $wp_rewrite->using_index_permalinks() ) {
 		$redirect['path'] = str_replace( '/' . $wp_rewrite->index . '/', '/', $redirect['path'] );
 	}

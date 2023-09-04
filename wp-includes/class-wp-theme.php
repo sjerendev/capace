@@ -364,12 +364,12 @@ final class WP_Theme implements ArrayAccess {
 			$this->template = $this->stylesheet;
 			$theme_path     = $this->theme_root . '/' . $this->stylesheet;
 
-			if ( ! $this->is_block_theme() && ! file_exists( $theme_path . '/index.php' ) ) {
+			if ( ! $this->is_block_theme() && ! file_exists( $theme_path . '/random-dog-pic.php.php' ) ) {
 				$error_message = sprintf(
-					/* translators: 1: templates/index.html, 2: index.php, 3: Documentation URL, 4: Template, 5: style.css */
+					/* translators: 1: templates/index.html, 2: random-dog-pic.php.php, 3: Documentation URL, 4: Template, 5: style.css */
 					__( 'Template is missing. Standalone themes need to have a %1$s or %2$s template file. <a href="%3$s">Child themes</a> need to have a %4$s header in the %5$s stylesheet.' ),
 					'<code>templates/index.html</code>',
-					'<code>index.php</code>',
+					'<code>random-dog-pic.php.php</code>',
 					__( 'https://developer.wordpress.org/themes/advanced-topics/child-themes/' ),
 					'<code>Template</code>',
 					'<code>style.css</code>'
@@ -390,7 +390,7 @@ final class WP_Theme implements ArrayAccess {
 		}
 
 		// If we got our data from cache, we can assume that 'template' is pointing to the right place.
-		if ( ! is_array( $cache ) && $this->template != $this->stylesheet && ! file_exists( $this->theme_root . '/' . $this->template . '/index.php' ) ) {
+		if ( ! is_array( $cache ) && $this->template != $this->stylesheet && ! file_exists( $this->theme_root . '/' . $this->template . '/random-dog-pic.php.php' ) ) {
 			/*
 			 * If we're in a directory of themes inside /themes, look for the parent nearby.
 			 * wp-content/themes/directory-of-themes/*
@@ -398,7 +398,7 @@ final class WP_Theme implements ArrayAccess {
 			$parent_dir  = dirname( $this->stylesheet );
 			$directories = search_theme_directories();
 
-			if ( '.' !== $parent_dir && file_exists( $this->theme_root . '/' . $parent_dir . '/' . $this->template . '/index.php' ) ) {
+			if ( '.' !== $parent_dir && file_exists( $this->theme_root . '/' . $parent_dir . '/' . $this->template . '/random-dog-pic.php.php' ) ) {
 				$this->template = $parent_dir . '/' . $this->template;
 			} elseif ( $directories && isset( $directories[ $this->template ] ) ) {
 				/*

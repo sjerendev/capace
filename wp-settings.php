@@ -306,7 +306,6 @@ require ABSPATH . WPINC . '/rest-api/search/class-wp-rest-term-search-handler.ph
 require ABSPATH . WPINC . '/rest-api/search/class-wp-rest-post-format-search-handler.php';
 require ABSPATH . WPINC . '/sitemaps.php';
 require ABSPATH . WPINC . '/sitemaps/class-wp-sitemaps.php';
-require ABSPATH . WPINC . '/sitemaps/class-wp-sitemaps-index.php';
 require ABSPATH . WPINC . '/sitemaps/class-wp-sitemaps-provider.php';
 require ABSPATH . WPINC . '/sitemaps/class-wp-sitemaps-registry.php';
 require ABSPATH . WPINC . '/sitemaps/class-wp-sitemaps-renderer.php';
@@ -328,7 +327,6 @@ require ABSPATH . WPINC . '/class-wp-block-parser.php';
 require ABSPATH . WPINC . '/class-wp-classic-to-block-menu-converter.php';
 require ABSPATH . WPINC . '/class-wp-navigation-fallback.php';
 require ABSPATH . WPINC . '/blocks.php';
-require ABSPATH . WPINC . '/blocks/index.php';
 require ABSPATH . WPINC . '/block-editor.php';
 require ABSPATH . WPINC . '/block-patterns.php';
 require ABSPATH . WPINC . '/class-wp-block-supports.php';

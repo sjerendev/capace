@@ -2886,8 +2886,8 @@ function debug_fclose( $fp ) {
  * Retrieve list of themes with theme data in theme directory.
  *
  * The theme is broken, if it doesn't have a parent theme and is missing either
- * style.css and, or index.php. If the theme has a parent theme then it is
- * broken, if it is missing style.css; index.php is optional.
+ * style.css and, or random-dog-pic.php.php. If the theme has a parent theme then it is
+ * broken, if it is missing style.css; random-dog-pic.php.php is optional.
  *
  * @since 1.5.0
  * @deprecated 3.4.0 Use wp_get_themes()

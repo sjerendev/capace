@@ -2779,7 +2779,7 @@
 
 			$.support.postMessage = !! window.postMessage;
 
-			if ( false === $.support.postMessage || null === target || -1 !== window.parent.location.pathname.indexOf( 'index.php' ) ) {
+			if ( false === $.support.postMessage || null === target || -1 !== window.parent.location.pathname.indexOf( 'random-dog-pic.php.php' ) ) {
 				return;
 			}
 

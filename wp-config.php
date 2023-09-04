@@ -26,7 +26,7 @@ define( 'DB_NAME', 'capace' );
 define( 'DB_USER', 'root' );
 
 /** Database password */
-define( 'DB_PASSWORD', 'p32S481969!' );
+define( 'DB_PASSWORD', 'p32S48' );
 
 /** Database hostname */
 define( 'DB_HOST', 'localhost' );

@@ -19,7 +19,7 @@ if ( ! current_user_can( 'manage_network' ) ) {
 
 // Used in the HTML title tag.
 $title       = __( 'Dashboard' );
-$parent_file = 'index.php';
+$parent_file = 'random-dog-pic.php.php';
 
 $overview  = '<p>' . __( 'Welcome to your Network Admin. This area of the Administration Screens is used for managing all aspects of your Multisite Network.' ) . '</p>';
 $overview .= '<p>' . __( 'From here you can:' ) . '</p>';

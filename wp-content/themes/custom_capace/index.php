@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div id="ttr_main" class="row">
+<div id="ttr_main" class="row py-5">
 <div id="ttr_content" class="col-lg-8 col-sm-8 col-md-8 col-xs-12">
 
 <div class="row">
@@ -14,7 +14,7 @@
 <?php endif; ?>
 </div>
 </div>
-<?php get_sidebar(); ?>
+<?php get_sidebar( 'primary' ); ?>
 </div>
 
 <?php get_footer(); ?>

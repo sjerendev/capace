@@ -21,18 +21,18 @@ body {
 	/* Default background color */
 }
 
-.color1 {
-	background-color: #ff5733;
+.color-green {
+	background-color: #ACEBE2;
 }
 
-.color2 {
-	background-color: #33ff57;
+.color-yellow {
+	background-color: #EDE6CC;
 }
 
-.color3 {
-	background-color: #5733ff;
+.color-blue {
+	background-color: #C4F3FA;
 }
 
-.color4 {
-	background-color: #3388ff;
+.color-beige {
+	background-color: #F8F1E9;
 }

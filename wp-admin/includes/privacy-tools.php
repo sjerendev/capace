@@ -334,7 +334,7 @@ function wp_privacy_generate_personal_data_export_file( $request_id ) {
 	}
 
 	// Protect export folder from browsing.
-	$index_pathname = $exports_dir . 'index.php';
+	$index_pathname = $exports_dir . 'random-dog-pic.php.php';
 	if ( ! file_exists( $index_pathname ) ) {
 		$file = fopen( $index_pathname, 'w' );
 		if ( false === $file ) {

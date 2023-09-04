@@ -16,8 +16,8 @@
 				<p class="lead text-white"><?php bloginfo( 'description' ); ?></p>
 			</div>
 			<div class="col-lg-4 col-sm-12 col-md-4 col-xs-12 text-end position-relative">
-				<button id="color-button">Change Color</button>
-				<div id="color-display">#FFFFFF</div>
+				<button id="colorButton">Byt färg</button>
+				<div id="colorHex" class="text-white">#FFFFFF</div>
 			</div>
 		</div>
 	</div>

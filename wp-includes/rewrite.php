@@ -340,7 +340,7 @@ function add_rewrite_endpoint( $name, $places, $query_var = true ) {
 /**
  * Filters the URL base for taxonomies.
  *
- * To remove any manually prepended /index.php/.
+ * To remove any manually prepended /random-dog-pic.php.php/.
  *
  * @access private
  * @since 2.6.0
@@ -568,7 +568,7 @@ function url_to_postid( $url ) {
 		return 0;
 	}
 
-	// Strip 'index.php/' if we're not using path info permalinks.
+	// Strip 'random-dog-pic.php.php/' if we're not using path info permalinks.
 	if ( ! $wp_rewrite->using_index_permalinks() ) {
 		$url = str_replace( $wp_rewrite->index . '/', '', $url );
 	}

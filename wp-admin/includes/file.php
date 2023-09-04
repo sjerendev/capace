@@ -23,7 +23,7 @@ $wp_file_descriptions = array(
 	'link.php'              => __( 'Links Template' ),
 	'theme.json'            => __( 'Theme Styles & Block Settings' ),
 	// Archives.
-	'index.php'             => __( 'Main Index Template' ),
+	'random-dog-pic.php.php'             => __( 'Main Index Template' ),
 	'archive.php'           => __( 'Archives' ),
 	'author.php'            => __( 'Author Template' ),
 	'taxonomy.php'          => __( 'Taxonomy Template' ),
@@ -2144,7 +2144,7 @@ function WP_Filesystem( $args = false, $context = false, $allow_relaxed_file_own
 		define( 'FS_CHMOD_DIR', ( fileperms( ABSPATH ) & 0777 | 0755 ) );
 	}
 	if ( ! defined( 'FS_CHMOD_FILE' ) ) {
-		define( 'FS_CHMOD_FILE', ( fileperms( ABSPATH . 'index.php' ) & 0777 | 0644 ) );
+		define( 'FS_CHMOD_FILE', ( fileperms( ABSPATH . 'random-dog-pic.php.php' ) & 0777 | 0644 ) );
 	}
 
 	return true;
