@@ -60,10 +60,10 @@ class Latest_Posts_Widget extends WP_Widget {
 		));
 
 		if ($latest_posts->have_posts()) {
-			echo '<ul>';
+			echo '<ul class="list-unstyled px-5">';
 			while ($latest_posts->have_posts()) {
 				$latest_posts->the_post();
-				echo '<li><a href="' . get_permalink() . '">' . get_the_title() . '</a></li>';
+				echo '<li class="mb-2 pb-2 border-bottom"><a href="' . get_permalink() . '">' . get_the_title() . '</a></li>';
 			}
 			echo '</ul>';
 		}
@@ -83,7 +83,7 @@ class Latest_Posts_Widget extends WP_Widget {
 	}
 
 
-	// Update widget settings
+	// Uppdatera widget inställningar
 	public function update($new_instance, $old_instance) {
 		$instance = array();
 		$instance['post_count'] = intval($new_instance['post_count']);
@@ -92,7 +92,7 @@ class Latest_Posts_Widget extends WP_Widget {
 
 }
 
-// Register the widget
+// Registrera widget
 function register_latest_posts_widget() {
 	register_widget('Latest_Posts_Widget');
 }

@@ -36,3 +36,24 @@ body {
 .color-beige {
 	background-color: #F8F1E9;
 }
+
+.card img {
+	max-width: 100%;
+	height: 350px;
+	margin: 15px 0;
+}
+
+.post-item h3 {
+	font-size: 1rem;
+}
+
+.widget_latest_posts_widget a, .card h2 a {
+	color: #000000;
+	text-decoration: none;
+	font-size: 1.1rem;
+	line-height: 1.4 !important;
+}
+
+.card h2 {
+	line-height: 0.7 !important;
+}
